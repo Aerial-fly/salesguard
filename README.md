@@ -30,12 +30,17 @@
 Dataset yang digunakan berasal dari transaksi kartu kredit asli (Kaggle). Demi menjaga privasi nasabah, data telah melalui proses **PCA (Principal Component Analysis)**. 
 Berikut penjelasannya:
 
+![Kurva Distribusi Normal](screenshots/normal-dist.jpg)
+
 ### 1. Apa itu Fitur V1 - V28?
 Fitur `V1`, `V2`, hingga `V28` adalah **Latent Features** (Fitur Tersembunyi) hasil transformasi matematika dari data asli (seperti Lokasi, Device, User ID, dll).
 * **Sifat:** Data ini anonim dan tidak dapat dikembalikan ke bentuk asalnya (*irreversible*).
 * **Fungsi:** Meskipun anonim, fitur ini mempertahankan **pola varians** dan korelasi yang diperlukan AI untuk membedakan transaksi normal vs penipuan.
 
-### 2. Bagaimana Cara Membaca Nilainya?
+### 2. Logika Statistik (Kurva Normal)
+Sistem ini menggunakan konsep **Standar Deviasi (Z-Score)**.
+
+### 3. Bagaimana Cara Membaca Nilainya?
 Nilai pada grafik adalah representasi **Standar Deviasi (Z-Score)** dari rata-rata populasi:
 * **Nilai 0:** Perilaku transaksi sama persis dengan rata-rata nasabah normal.
 * **Range -2 s/d +2:** Area **zona aman (Normal)**, mencakup 95% perilaku nasabah.
