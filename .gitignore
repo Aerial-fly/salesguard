@@ -10,3 +10,5 @@ __pycache__/
 # Abaikan file sistem Mac/Windows
 .DS_Store
 Thumbs.db
+
+creditcard.csv

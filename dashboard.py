@@ -74,7 +74,7 @@ with col1:
         st.warning("Generate data dulu di sidebar.")
 
 with col2:
-    st.subheader("2. Hasil Analisa Real-time")
+    st.subheader("2. Hasil Analisa")
     
     if 'tx_data' in st.session_state:
         if st.button("🔍 Cek Analisa AI", type="primary"):
@@ -93,7 +93,7 @@ with col2:
                     is_fraud = res['prediction'] == "Fraud"
                     
                     if is_fraud:
-                        st.error("🚨 PERINGATAN: TRANSAKSI MENCURIGAKAN!")
+                        st.error("🚨TRANSAKSI MENCURIGAKAN")
                     else:
                         st.success("✅ Transaksi Aman")
 
