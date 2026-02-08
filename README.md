@@ -60,12 +60,12 @@ Sistem ini dibangun dengan arsitektur **Microservice Sederhana**:
 **Struktur File:**
 ```bash
 📂 fraud-detection-project
-├── 📂 screenshots       # Folder menyimpan bukti demo
+├── 📂 screenshots       # Folder Demo
 ├── 📄 train_model.py    # Script untuk melatih AI & menyimpan model (.pkl)
 ├── 📄 main.py           # Server Backend (FastAPI)
 ├── 📄 dashboard.py      # Interface Frontend (Streamlit)
-├── 📄 model_fraud.pkl   # File "Otak" AI yang sudah dilatih
-└── 📄 requirements.txt  # Daftar library yang dibutuhkan
+├── 📄 model_fraud.pkl   # Model AI yang sudah dilatih
+└── 📄 requirements.txt  # Daftar library 
 ```
 
 ---
